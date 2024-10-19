@@ -25,8 +25,7 @@ SELECT * FROM world_layoffs.layoffs;
 
 -- 1. Remove Duplicates:
 
-# First let's check for duplicates
-
+# Let’s start by examining the dataset for any duplicate entries.
 
 
 SELECT *
@@ -53,7 +52,8 @@ FROM (
 WHERE 
 	row_num > 1;
     
--- let's just look at oda to confirm
+-- Let's just look at oda to confirm:
+
 SELECT *
 FROM world_layoffs.layoffs_staging
 WHERE company = 'Oda'
